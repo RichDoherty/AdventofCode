@@ -8,9 +8,7 @@ type Directory = {
     files: { [name: string]: number };
 }
 
-const fileSystem = [];
 const root: Directory = { directories: {}, files: {} };
-fileSystem.push(root);
 
 let currentDirectory = root;
 let filePath = [root];
