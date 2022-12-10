@@ -21,14 +21,14 @@ let numCycles = 0;
 for (let i = 0; i < 6; i++) {
     let screenLine = "";
     for (let j = 0; j < 40; j++) {
-    const sprite = [x-1, x, x+1];
-    if (j >= sprite[0] && j <= sprite[2]) {
-        screenLine += "#";
-    } else {
-        screenLine += ".";
-    }
-    x += cycles[j + 40 * numCycles];
-    console.log(sprite);
+        const sprite = [x-1, x, x+1];
+        if (j >= sprite[0] && j <= sprite[2]) {
+            screenLine += "#";
+        } else {
+            screenLine += ".";
+        }
+        x += cycles[j + 40 * numCycles];
+        console.log(sprite);
     }
     screen.push(screenLine);
     numCycles++;
